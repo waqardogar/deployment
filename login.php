@@ -2,7 +2,7 @@
 // Check if the login form is submitted
 if(isset($_POST['login'])){
   // Establish database connection
-  $conn = mysqli_connect("database-1.crxynx6w8jxz.eu-central-1.rds.amazonaws.com", "admin", "admin123", "mydb");
+  $conn = new mysqli("database-1.crxynx6w8jxz.eu-central-1.rds.amazonaws.com", "admin", "admin123", "mydb");
 
   // Check connection
   if (mysqli_connect_errno()) {
